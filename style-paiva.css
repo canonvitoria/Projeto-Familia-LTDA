@@ -1,0 +1,359 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+    --color-backpage: #f2f2f2;
+    --color-text: #2e2e2e;
+    --color-primary: #749974;
+    --color-secundary: #cc9c1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    font-family: 'tilt Neon';
+    background: #f2f2f2;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+div.logo-box{
+    width: 50%;
+  }
+
+  .logo{
+    width: 150px;
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+
+header h1{
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f9f9f9;
+    margin-left:60px;
+}
+
+.logo img{
+  width: 130px;
+  padding-top: 60px;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+div.navegacao {
+  margin-top: -50px;
+  width: 50%;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', cursive;
+}
+
+.menu-links hr {
+  width: 20px;
+  height: 3px;
+  transition: 0.5s;
+  border: none;
+  background-color: #749950;
+  border-radius: 3px;
+
+}
+
+div.menu-links a:hover~hr {
+  width: 50px;
+  text-align: center;
+  transition: 0.7s;
+}
+
+li.family {
+  height: 20px;
+  overflow: hidden;
+}
+
+div.menu-links ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+div.menu-links ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+div.menu-links ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+div.sub-menu-1 {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: .6s;
+  color: #f2f2f2;
+}
+
+.li-familia{
+   margin-right: -40px;
+}
+
+.familiadiv {
+  display: flex;
+  align-items: center;
+}
+
+div.menu-links ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: var(--color-secundary);
+  color: white;
+  height: 300px;
+}
+
+div.menu-links ul li:hover .sub-menu-1 ul {
+  display: block;
+}
+
+div.menu-linkslinks ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.texto-submenu a {
+  color: #f2f2f2;
+}
+
+ div.family span{
+    border-bottom: 4px solid#749950;
+}
+
+.contact-me{
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.3rem;
+}
+
+.butão{
+  background: none;
+  border: none;
+  color: #e90e0e;
+  padding: 0.8rem 1.9rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contact-me:hover ~ hr{
+  width: 100px;
+}
+
+hr{
+  background: #749950;
+  width: 10px;
+  height: 4px;
+  margin: 0 auto;
+  transition: .7s;
+}
+
+.introducao{
+    height: calc(100vh - 60px);
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+}
+.introducao div{
+    width:40%;
+    height: 100%;
+
+}
+div.introducao-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    z-index: 1;
+}
+div.introducao-textos h1{
+    font-size: 3rem;
+    width: 600px;
+}
+
+div.introducao-textos p{
+  font-size: 1.1rem;
+}
+div.introducao-textos span{
+    border-bottom: 4px solid#749950;
+}
+
+.imagem1{  
+    width: 450px;
+    display: flex;
+    margin-top: -10px;
+}
+
+
+
+section.family {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background: var(--color-secundary);
+  }
+  
+  section.family>h2 {
+    font-size: 50px;
+    margin: 20px 10%;
+  }
+  
+  section.family>.container-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  
+  }
+  
+  div.imagens {
+    width: 500px;
+    height: 450px;
+  }
+  
+  div.imagem {
+    width: 100%;
+    height: 70%;
+  }
+  
+  div.img1>.imagem {
+    background-image: url(img/Dudu.jpg);
+    background-size: 100% 130%;
+  }
+  
+  div.img2>.imagem {
+    background-image: url(img/Duda.jpg);
+    background-size: 100% 160%;
+  }
+  
+  div.img3>.imagem {
+    background-image: url(img/matheus.png);
+    background-size: 100% 250%;
+    background-position: center center;
+  }
+  
+  div.img4>.imagem {
+    background-image: url(img/Gui.jpg);
+    background-size: 100% 250%;
+    background-position: center center;
+  }
+  
+  div.img5>.imagem {
+    background-image: url(img/pai\ e\ mae.png);
+    background-size: 100% 200%;
+    background-position: center center;
+  }
+
+  div.img6>.imagem {
+    background-image: url(img/Família.png);
+    background-size: 100% 200%;
+    background-position: center center;
+  }
+
+  div.img7>.imagem {
+    background-image: url(img/Colegas.jpg);
+    background-size: 100% 150%;
+    background-position: center center;
+  }
+
+
+  div.descricao-imagens {
+    margin-top: 1rem;
+  }
+  
+
+footer {
+    background: var(--color-text);
+    color: var(--color-backpage);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer>.copy {
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer>h3 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer>.contatos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .contatos>.andre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos>.jonatas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos>.vitoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos>.catiuscia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos>.eduardo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a>img {
+    width: 30px;
+    height: 30px;
+  }

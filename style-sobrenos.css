@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+  --color-backpage:#f2f2f2;
+  --color-text:#2e2e2e;
+  --color-primary: #749950;
+  --color-secundary: #cc9c1a; 
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background: #f2f2f2;
+  color:#2e2e2e;
+  font-family: 'Tilt Neon', cursive;
+}
+
+/*-- Estilo cabecalho --*/
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.logo {
+  width: 100px;
+}
+
+.logo-foto {
+  margin: 20px;
+  width: 150px;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+div.navegacao {
+  width: 800px;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', cursive;
+}
+
+.menu-links hr {
+  width: 20px;
+  height: 3px;
+  transition: 0.5s;
+  border: none;
+  background-color: #749950;
+  border-radius: 3px;
+
+}
+
+div.menu-links a:hover~hr {
+  width: 50px;
+  text-align: center;
+  transition: 0.7s;
+}
+
+li.family {
+  height: 20px;
+  overflow: hidden;
+}
+
+div.menu-links ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+div.menu-links ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+div.menu-links ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+div.sub-menu-1 {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: .6s;
+  color: #f2f2f2;
+}
+
+.li-familia{
+   margin-right: -40px;
+}
+
+.familiadiv {
+  display: flex;
+  align-items: center;
+}
+
+div.menu-links ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #cc9c1a;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+}
+
+div.menu-links ul li:hover .sub-menu-1 ul {
+  display: block;
+}
+
+div.menu-linkslinks ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.texto-submenu a {
+  color: #f2f2f2;
+} 
+
+/*-- Estilo seção principal  */
+
+section.principal-section{
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+
+div.descricao-principal{
+  width: 50%;
+  height: 100%;
+  margin-right: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  z-index:1;
+}
+
+div.flex-descricao{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+div.descricao-principal h1{
+  font-size:3.2rem;
+  font-weight: bold;
+}
+
+div.descricao-principal button{
+   background: none;
+  border: none;
+}
+
+button#btn-descricao a{
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+}
+
+button#btn-descricao a:hover ~ hr{
+  width: 90px;
+}
+
+button#btn-descricao hr{
+  width: 10px;
+  height: 3px;
+  transition: .7s;
+  background: #749950;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.colegas {
+  width: 800px;
+  height: 500px;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+
+/*-- Estilo seções secundarias --*/
+
+section.integrantes{
+  width: 100%;
+  height: 1500px;
+  margin-bottom:-200px;
+}
+
+div.container1{
+  width:100% ;
+  height: 50%;
+  color:#f2f2f2;
+  display: flex;
+  margin-bottom: -170px;
+}
+
+div.imagem-perfil{
+  width: 50%;
+  height: 100%;
+  background: var(--color-primary);
+  position:relative;
+}
+
+div.imagem-perfil svg{
+  transform:translate(-15%, 0%);
+  position:absolute;
+  top:30%;
+  left:100%;
+  scale:4;
+  color:var(--color-backpage);
+}
+
+div.descricao-individual{
+  width: 50%;
+  height: 100%;
+  background: #2e2e2e;
+  display: flex;
+ 
+}
+
+div.box-individual{
+  width:400px;
+  margin: 130px auto;
+}
+
+div.descricao-individual h1{
+   font-size: 2.5rem;
+   width: 300px;
+}
+
+div.descricao-individual p{
+   font-size: 1.1rem;
+   margin: 50px 0 ;
+}
+
+
+div.descricao-individual button{
+   border:none;
+   background: none;
+}
+
+div.descricao-individual a{
+  color: var(--color-secundary);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+div.descricao-individual hr{
+  width: 10px;
+  height: 3px;
+  transition: .7s;
+  background-color: var(--color-secundary);
+  border: none;
+}
+
+div.descricao-individual a:hover ~ hr {
+   width: 100px;
+}
+
+
+div.container2{
+  width:100% ;
+  height: 50%;
+  display: flex;
+}
+
+div.titulo-curiosidades{
+  width: 37.5%;
+  height: 100%;
+  position: relative;
+}
+
+div.titulo-curiosidades h2{
+  font-size: 2.8rem;
+  transform: translate(-80%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 350px;
+  z-index:2;
+  text-shadow:1px 1px 3px var(--color-backpage);
+}
+div.box-curiosidades{
+  width: 63.5%;
+  height: 100%;
+  color: var(--color-backpage);
+  background: var(--color-secundary);
+  z-index:1;  
+  overflow: hidden;
+}
+
+div.flex-curiosidades{
+  width: 450px;
+  height: 80%;
+  margin: 100px 70px 200px auto;
+}
+
+div.flex-curiosidades .fatos{
+  margin:30px 0 ;
+}
+
+div.flex-curiosidades span:nth-child(1){
+  font-size: 3.5rem;
+  font-weight: bold;
+  opacity: 40%;
+  position: relative;
+  top: 10px;
+  right: 37px;
+  margin-right:-50px;
+}
+
+div.flex-curiosidades span:nth-child(2){
+  font-size:1.1rem;
+  font-weight:bold;
+  color:#fff;
+}
+
+/* correção da seção1 -- */
+
+section.integrante1 .imagem-perfil{
+  background: url(img/foto-perfil-andre.jpg) ;
+  background-size: 50% 100%;
+  background-attachment:fixed;
+  
+}
+
+
+/*-- correção da seção2 --*/
+
+
+section.integrante2 .descricao-individual{
+  order:1;
+}
+
+section.integrante2 .imagem-perfil{
+  background: url(img/img1.jpg) ;
+  background-size: 50% 100%;
+  background-attachment:fixed;
+  order:2;
+}
+
+section.integrante2 svg{
+  left:0%;
+}
+
+section.integrante2 .titulo-curiosidades{
+  order:2;
+}
+
+section.integrante2 .titulo-curioso{
+  left:-5%;
+  transform:translate(0,0);
+}
+
+section.integrante2 .box-curiosidades{
+  order:1;
+}
+
+section.integrante2 .flex-curiosidades{
+    margin: 100px auto 200px 150px;
+}
+
+/*-- correção seção 3 */
+
+section.integrante3 .imagem-perfil{
+  background: url(img/Dudu.jpg) ;
+  background-size: 50% 100%;
+  background-attachment:fixed;
+}
+
+
+/*-- correção seçao 4  */
+section.integrante4 .descricao-individual{
+  order:1;
+}
+
+section.integrante4 .imagem-perfil{
+  background: url(img/foto-perfil.jpg);
+  background-size: 50% 100%;
+  background-attachment: fixed;
+  order:2;
+}
+
+section.integrante4 svg{
+  left:0%;
+}
+
+section.integrante4 .titulo-curiosidades{
+  order:2;
+}
+
+section.integrante4 .titulo-curioso{
+  left:-5%;
+  transform:translate(0,0);
+}
+
+section.integrante4 .box-curiosidades{
+  order:1;
+}
+
+section.integrante4 .flex-curiosidades{
+    margin: 100px auto 200px 150px;
+}
+
+/*--  correção seção 5 */
+section.integrante5 {
+  margin-bottom: 50px;
+}
+
+section.integrante5 .imagem-perfil{
+  background: url(img/WhatsApp\ Image\ 2023-03-01\ at\ 08.58.52.jpeg);
+  background-size: 30% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #2e2e2e;
+}
+
+
+
+/* footer */
+
+footer {
+  background:#2e2e2e;
+  color: white;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>.copy {
+  width: 100%;
+  text-align: center;
+}
+
+footer>h3 {
+  width: 100%;
+  text-align: center;
+}
+
+footer>.contatos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contatos>.andre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.jonatas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.vitoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.catiuscia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.eduardo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a>img {
+  width: 30px;
+  height: 30px;
+}

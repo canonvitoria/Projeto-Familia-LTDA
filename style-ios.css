@@ -1,0 +1,479 @@
+:root {
+    --color-backpage: #f2f2f2;
+    --color-text: #2e2e2e;
+    --color-primary: #749950;
+    --color-secundary: #381c30;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    color: #2e2e2e;
+    font-family: 'Tilt Neon', cursive;
+}
+
+header.header-main {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+
+header.header-main>.logo {
+    width: 100px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 120px;
+    margin: 20px;
+}
+
+.menu {
+    display: inline-flex;
+}
+
+div.navegacao {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+}
+
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    z-index: 10;
+    text-align: center;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.menu-links hr {
+    width: 20px;
+    height: 3px;
+    transition: 0.5s;
+    border: none;
+    background-color: #749950;
+    border-radius: 3px;
+
+}
+
+div.menu-links a:hover~hr {
+    width: 50px;
+    text-align: center;
+    transition: 0.7s;
+}
+
+li.family {
+    height: 20px;
+    overflow: hidden;
+}
+
+div.menu-links ul {
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+div.menu-links ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+}
+
+div.menu-links ul li a {
+    text-decoration: none;
+    color: #2e2e2e;
+    cursor: pointer;
+}
+
+div.sub-menu-1 {
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    transition: .6s;
+    color: #f2f2f2;
+}
+
+.li-familia {
+    margin-right: -40px;
+}
+
+.familiadiv {
+    display: flex;
+    align-items: center;
+}
+
+div.menu-links ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: #cc9c1a;
+    color: white;
+    height: 300px;
+    border-radius: 5px;
+}
+
+div.menu-links ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+div.menu-linkslinks ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.texto-submenu a {
+    color: #f2f2f2;
+}
+
+/* secao 1 */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+.imagem {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+.imagem img {
+    width: 400px;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.texto {
+    order: 2;
+    width: 35%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.texto h1 {
+    font-size: 2.3rem;
+}
+
+.texto span {
+    border-bottom: 4px solid var(--color-secundary);
+}
+
+.texto hr {
+    border: none;
+    width: 10px;
+    height: 4px;
+    background: var(--color-secundary);
+    margin: 0 auto;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 80px;
+    color: #000;
+    background: none;
+    border: none;
+    margin: 20px 0px;
+}
+
+.btn>a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.1rem;
+}
+
+.btn a:hover~hr {
+    width: 55px;
+}
+
+/* Stacks */
+
+div.stack-box {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+div.stack-title {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div.stack-title hr {
+    border: none;
+    width: 40px;
+    height: 5px;
+    background: var(--color-secundary);
+}
+
+div.stack-title h2 {
+    font-size: 3.3rem;
+
+}
+
+div.stack-list {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+div.stacks {
+    display: flex;
+    gap: 20px;
+    width: 500px;
+}
+
+div.stacks img {
+    width: 90px;
+}
+
+/*-- Cursos --*/
+
+div.container-cursos {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.container-cursos>h2 {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#container-cursos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#container-cursos>a {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 1rem;
+    text-decoration: none;
+    color: #2e2e2e;
+    box-shadow: 1px 1px 3px #dfdfdf;
+    background: #fff;
+    ;
+    margin: 7px;
+    transition: .5s;
+}
+
+#container-cursos>a:hover {
+    scale: 1.02;
+}
+
+#container-cursos>a:nth-child(1):hover {
+    background: #cc9c1a
+}
+
+#container-cursos>a:nth-child(2):hover {
+    background: #749950;
+}
+
+#container-cursos>a:nth-child(3):hover {
+    background: #cc9c1a;
+}
+
+#container-cursos>a:nth-child(4):hover {
+    background: #749950;
+}
+
+#container-cursos>a:nth-child(5):hover {
+    background: #cc9c1a;
+}
+
+#container-cursos>a:nth-child(6):hover {
+    background: #749950;
+}
+
+a>.cursos {
+    width: 100%;
+    height: 100%;
+}
+
+.foto {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+.foto>img {
+    width: 60px;
+    height: 60px;
+}
+
+.cursos>h3 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cursos>p {
+    width: 100%;
+    height: calc(60% - 4rem);
+    text-indent: 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 40px 0px;
+}
+
+/* Professores  */
+
+div.secao-professores {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container-professores {
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.professores {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.professores .imagem-professor {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+div.professor1 .imagem-professor {
+    background-image: url(img/João.jpeg);
+    background-size: cover;
+}
+
+div.professor2 .imagem-professor {
+    background-image: url(img/Clari.jpeg);
+    background-size: cover;
+}
+
+div.professor3 .imagem-professor {
+    background-image: url(img/Gustavo.jpeg);
+    background-size: cover;
+}
+
+/* footer */
+
+footer {
+    background: var(--color-text);
+    color: var(--color-backpage);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer>.copy {
+    width: 100%;
+    text-align: center;
+}
+
+footer>h3 {
+    width: 100%;
+    text-align: center;
+}
+
+footer>.contatos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contatos>.andre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatos>.jonatas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatos>.vitoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatos>.catiuscia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatos>.eduardo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a>img {
+    width: 30px;
+    height: 30px;
+}

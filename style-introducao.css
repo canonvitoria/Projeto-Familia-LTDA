@@ -1,0 +1,585 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #f2f2f2;
+  color: #2e2e2e;
+  font-family: 'Tilt Neon', cursive;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.logo-box {
+  width: 200px;
+}
+
+.logo {
+  margin: 20px;
+  width: 150px;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+div.navegacao {
+  width: 700px;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', cursive;
+}
+
+.menu-links hr {
+  width: 20px;
+  height: 3px;
+  transition: 0.5s;
+  border: none;
+  background-color: #749950;
+  border-radius: 3px;
+
+}
+
+div.menu-links a:hover~hr {
+  width: 50px;
+  text-align: center;
+  transition: 0.7s;
+}
+
+li.family {
+  height: 20px;
+  overflow: hidden;
+}
+
+div.menu-links ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+div.menu-links ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+div.menu-links ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+div.sub-menu-1 {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: .6s;
+  color: #f2f2f2;
+}
+
+.li-familia{
+   margin-right: -40px;
+}
+
+.familiadiv {
+  display: flex;
+  align-items: center;
+}
+
+div.menu-links ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #cc9c1a;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+}
+
+div.menu-links ul li:hover .sub-menu-1 ul {
+  display: block;
+}
+
+div.menu-linkslinks ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.texto-submenu a {
+  color: #f2f2f2;
+} 
+
+/*-- Estilo secao principal --*/
+
+section.principal-secao {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+
+div.container1 {
+  width: 400px;
+  height: 100%;
+  display: flex;
+}
+
+.container1>.box1>.img1 {
+  background: url(img/familia-jonatas1.jpg);
+  background-size: cover;
+}
+
+.container1>.box1>.img2 {
+  background: url(img/familia-vitoria1.jpeg);
+  background-size: cover;
+}
+
+.container1>.box2>.img3 {
+  background: url(img/familia-vitoria2.jpeg);
+  background-size: cover;
+}
+
+.container1>.box2>.img4 {
+  background: url(img/familia-eduardo1.png);
+  background-size: cover;
+}
+
+.container1>.box3>.img5 {
+  background: url(img/familia-cati2.jpg);
+  background-size: cover;
+}
+
+.container1>.box3>.img6 {
+  background: url(img/familia-jonatas3.jpg);
+  background-size: cover;
+}
+
+.container2>.box4>.img7 {
+  background: url(img/familia-andre1.jfif);
+  background-size: cover;
+}
+
+.container2>.box4>.img8 {
+  background: url(img/familia-cati1.jpg);
+  background-size: cover;
+}
+
+.container2>.box5>.img9 {
+  background: url(img/familia-eduardo2.jpg);
+  background-size: cover;
+}
+
+.container2>.box5>.img10 {
+  background: url(img/estadio.jpg);
+  background-size: cover;
+}
+
+.container2>.box6>.img11 {
+  background: url(img/familia-jonatas2.jpg);
+  background-size: cover;
+}
+
+.container2>.box6>.img12 {
+  background: url(img/familia-vitoria3.jpeg);
+  background-size: cover;
+}
+div.conteudo-principal-secao {
+  width: 440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+div.conteudo-principal-secao h1 {
+  width: 360px;
+  font-size: 2.5rem;
+}
+
+div.conteudo-principal-secao p {
+  width: 550px;
+  font-size: 1.1rem;
+}
+
+div.conteudo-principal-secao a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+div.conteudo-principal-secao button:hover {
+  scale: 1.04;
+  transition: .4s;
+}
+
+button#btn1 {
+  box-shadow: 1px 1px 3px #444;
+  padding: 15px 50px;
+  margin: 20px;
+  border-radius: 30px;
+  border: none;
+  background: #5FB347;
+  font-size: 15px;
+
+}
+
+button#btn2 {
+  box-shadow: 1px 1px 3px #444;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #cc9c1a;
+  font-size: 15px;
+}
+
+div.container2 {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+div.container1 .box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  transition: 1s;
+}
+
+div.box:hover {
+  padding: 3px;
+}
+
+div.container1 .box2 {
+  padding-bottom: 100px;
+}
+
+div.container2 .box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  transition: 1s;
+  position: relative;
+
+}
+
+div.container2 .box5 {
+  padding-top: 100px;
+}
+
+
+div.imagens {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #aaa;
+  background-size: cover;
+  box-shadow: 1px 1px 5px #333;
+  animation: is-move 2s alternate-reverse infinite;
+  transition: 1s;
+}
+
+div.imagens:hover {
+  scale: 1.2;
+}
+
+@keyframes is-move {
+  to {
+    margin: 6px 0;
+  }
+}
+
+div.box1 .imagens {
+  animation-delay: 1s;
+}
+
+div.box3 .imagens {
+  animation-delay: 2s;
+}
+
+div.box4 .imagens {
+  animation-delay: 1s;
+}
+
+div.box6 .imagens {
+  animation-delay: 2s;
+}
+
+/*-- seção seletor de familia  --*/
+
+section.seletor-familias{
+   width: 100%;
+   display:flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+div.container-seletor{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+div.imagems{
+  width: 200px;
+  height: 180px;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+div.imagems:hover a{
+  padding: 105px 105px 105px 105px;
+}
+
+div.imagems:hover .back-imagem{
+  background: rgba(0,0,0,.4);
+}
+
+.imagem1 {
+  background: url(img/foto-perfil-andre.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.imagem2 {
+  background: url(img/foto-perfil-cati.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.imagem3 {
+  background: url(img/foto-perfil-edu.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.imagem4 {
+  background: url(img/foto-perfil-jonatas.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.imagem5 {
+  background: url(img/foto-perfil-vitoria.jpeg);
+  background-size: 100% 100%;
+  background-position: center 310px;
+}
+div.back-imagem{
+  width: 100%;
+  height: 100%;
+  transition: .9s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.back-imagem a{
+  transition: .5s;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f2f2f2;
+  padding: 105px 105px 310px 105px;
+}
+
+div.back-imagem:hover a{
+   transition-delay: .3s;
+}
+
+div.texto-familia{
+  width: 550px;
+  height: 400px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+div.texto-familia h2{
+  color: #749950;
+  font-size: 2.4rem;
+  margin: 20px;
+}
+
+div.texto-familia hr{
+  width: 4px;
+  height: 34px;
+  background: #749950;
+  border: none;
+  margin-bottom: -40px;
+}
+
+/*-- responsividade --*/
+
+@media(max-width:897px){
+  header{
+    height: 200px;
+    justify-content:center;
+   
+  }
+  div.logo-box{
+     width:100vw;
+    display: flex;
+    justify-content: center;
+  }
+  div.navegacao{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+  .menu-links{
+    padding-left: 0;
+    padding: 15px;
+  }
+  
+  .logo {
+    width: 150px;
+}
+  
+section.principal-secao{
+   width: 100%;
+   height: 100vh ;
+   display: flex;
+  flex-direction: columns;
+  align-items: center;
+   justify-content:center;
+   flex-wrap: wrap;
+}
+
+  div.container1 {
+   display:none;
+  }
+
+  div.container1 .box{
+    align-items: center;
+  }
+
+  div.container2 {
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+  }
+
+    div.container2 .box{
+    align-items: center;
+  }
+
+  div.conteudo-principal-secao{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding-top: 100px;
+  }
+  div.conteudo-principal-secao h1{
+      font-size: 2.2rem;
+    padding: 10px;
+  }
+  div.conteudo-principal-secao p{
+    width:330px;
+  }
+}
+
+/* footer */
+
+footer {
+  background:#2e2e2e;
+  color: white;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>.copy {
+  width: 100%;
+  text-align: center;
+}
+
+footer>h3 {
+  width: 100%;
+  text-align: center;
+}
+
+footer>.contatos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contatos>.andre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.jonatas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.vitoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.catiuscia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.eduardo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a>img {
+  width: 30px;
+  height: 30px;
+}

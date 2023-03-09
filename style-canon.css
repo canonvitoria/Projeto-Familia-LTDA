@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon';
+}
+
+.secao-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    height: 700px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+div.logo-box {
+  width: 40%;
+  padding: 20px;
+}
+
+.logo {
+  margin: 20px;
+  width: 150px;
+}
+
+.menu {
+  display: inline-flex;
+  background-color: #f2f2f2;
+}
+
+div.navegacao {
+    width: 800px;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', cursive;
+}
+
+.menu-links hr {
+  width: 20px;
+  height: 3px;
+  transition: 0.5s;
+  border: none;
+  background-color: #749950;
+  border-radius: 3px;
+
+}
+
+div.menu-links a:hover~hr {
+  width: 50px;
+  text-align: center;
+  transition: 0.7s;
+}
+
+li.family {
+  height: 20px;
+  overflow: hidden;
+}
+
+div.menu-links ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+div.menu-links ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+div.menu-links ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+div.sub-menu-1 {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: .6s;
+  color: #f2f2f2;
+}
+
+.li-familia{
+   margin-right: -40px;
+}
+
+.familiadiv {
+  display: flex;
+  align-items: center;
+}
+
+div.menu-links ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #cc9c1a;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+}
+
+div.menu-links ul li:hover .sub-menu-1 ul {
+  display: block;
+}
+
+div.menu-linkslinks ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.texto-submenu a {
+  color: #f2f2f2;
+} 
+
+.introducao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome {
+    padding-right: 20px;
+    font-size: 50px;
+    border-bottom: #749950 4px solid ;
+    border-radius: 4px;
+    font-family: 'Tilt Neon', cursive;
+    padding-top: 250px;
+}
+
+.introducao-texto {
+  padding-right: 10px;
+  padding-top: 50px;  
+  font-weight: lighter;
+  font-family: 'Tilt Neon', cursive;
+  text-align: justify;
+  
+}
+
+.perfil {
+    width: 350px;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 15px;
+}
+
+.botao-div {
+    width: 90px;
+}
+
+.btn {
+    margin-top: 50px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+hr {
+    width: 20px;
+    height: 3px;
+    transition: 0.5s;
+    margin: 0 auto;
+    background-color: #749950;
+    border-radius: 3px;
+}
+
+.btn:hover ~hr {
+    width: 200px;
+}
+
+.secao-2 {
+    background-color: #cc9c1a;
+    height: 1900px;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.titulo {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    padding: 2vw;
+}
+
+
+.album {
+    width: 500px;
+    height: 315px;
+    transition: transform 0.1s;
+    margin-bottom: 100px;
+}
+
+.foto-album img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px ;
+}
+
+.album:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #2e2e2e;
+    color: #f2f2f2;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  
+  footer > .copy {
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer > h3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  footer > .contatos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .contatos > .andre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos > .jonatas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos > .vitoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos > .catiuscia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatos > .eduardo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a > img {
+    width: 30px;
+    height: 30px;
+  }

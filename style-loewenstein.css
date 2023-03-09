@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root {
+  --color-backpage: #f2f2f2;
+  --color-text: #2e2e2e;
+  --color-primary: #749950;
+  --color-secundary: #cc9c1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--color-backpage);
+  color: var(--color-text);
+  /*   font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: 'Tilt Neon', cursive;
+}
+
+header.header-main {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+
+header.header-main>.logo {
+  width: 100px;
+  margin-left: 80px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 120px;
+  margin: 20px;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+div.navegacao {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 10%;
+}
+
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', cursive;
+}
+
+.menu-links hr {
+  width: 20px;
+  height: 3px;
+  transition: 0.5s;
+  border: none;
+  background-color: #749950;
+  border-radius: 3px;
+
+}
+
+div.menu-links a:hover~hr {
+  width: 50px;
+  text-align: center;
+  transition: 0.7s;
+}
+
+li.family {
+  height: 20px;
+  overflow: hidden;
+}
+
+div.menu-links ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+div.menu-links ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+div.menu-links ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+div.sub-menu-1 {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: .6s;
+  color: #f2f2f2;
+}
+
+.li-familia{
+   margin-right: -40px;
+}
+
+.familiadiv {
+  display: flex;
+  align-items: center;
+}
+
+div.menu-links ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #cc9d1a;
+  color: white;
+  height: 300px;
+  border-radius: 5px;
+}
+
+div.menu-links ul li:hover .sub-menu-1 ul {
+  display: block;
+}
+
+div.menu-linkslinks ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.texto-submenu a {
+  color: #f2f2f2;
+} 
+
+/* seção 1 */
+
+.pc {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section.apresentacao {
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+section.apresentacao>.descricao {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.descricao h1 {
+  font-size: 3.4rem;
+  text-shadow: 1px 1px 15px var(--color-backpage);
+  width: 600px;
+}
+
+.descricao p {
+  width: 420px;
+  font-size: 1.1rem;
+}
+
+.descricao span {
+  border-bottom: #749950 4px solid;
+}
+
+.descricao button {
+  background: none;
+  border: none;
+}
+
+.descricao a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #2e2e2e;
+}
+
+div.imagem-perfil {
+  width: 500px;
+  height: 100%;
+}
+
+div.imagem-perfil>img {
+  width: 450px;
+  height: 600px;
+}
+
+div.button-contact hr {
+  width: 12px;
+  margin: 0 auto;
+  border: 1px solid #749950;
+  transition: .4s ease-in-out;
+}
+
+.button-contact>button:hover~hr {
+  width: 90px;
+  background: var(--color-secundary);
+}
+
+.mobile {
+  display: none;
+}
+
+/* seção 2 */
+
+section.family {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background: var(--color-secundary);
+  margin-top: 50px;
+}
+
+section.family>h2 {
+  font-size: 50px;
+  margin: 20px 10%;
+}
+
+section.family>.container-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+div.imagens {
+  width: 500px;
+  height: 450px;
+}
+
+div.imagem {
+  width: 100%;
+  height: 70%;
+}
+
+div.img1>.imagem {
+  background-image: url(img/estadio.jpg);
+  background-size: 100% 100%;
+}
+
+div.img2>.imagem {
+  background-image: url(img/churras.jfif);
+  background-size: 100% 100%;
+}
+
+div.img3>.imagem {
+  background-image: url(img/IOS.jpeg);
+  background-size: 100% 100%;
+}
+
+div.img4>.imagem {
+  background-image: url(img/Colegas.jpg);
+  background-size: 100% 100%;
+}
+
+div.descricao-imagens {
+  margin-top: 1rem;
+}
+
+#foto1>h2 {
+  color: var(--color-backpage);
+}
+
+#foto4>h2 {
+  color: var(--color-backpage);
+}
+
+.descricao-imagens>p {
+  margin-top: 2px;
+}
+
+@media(max-width:1016px) {
+  header.header-main {
+    flex-direction: column;
+  }
+
+  header.header-main>.logo {
+    width: 100%;
+    margin-left: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .logo>img {
+    width: 160px;
+  }
+
+  div.navegacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  section.family {
+    margin-top: 350px;
+  }
+
+  section.family>h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+/* footer */
+
+footer {
+  background: var(--color-text);
+  color: var(--color-backpage);
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>.copy {
+  width: 100%;
+  text-align: center;
+}
+
+footer>h3 {
+  width: 100%;
+  text-align: center;
+}
+
+footer>.contatos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contatos>.andre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.jonatas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.vitoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.catiuscia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos>.eduardo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a>img {
+  width: 30px;
+  height: 30px;
+}
